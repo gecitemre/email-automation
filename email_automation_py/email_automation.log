@@ -1,0 +1,153 @@
+2025-08-15 00:01:07,585 - ERROR - Please update the config.json file with your Gmail credentials.
+2025-08-15 00:01:07,585 - ERROR - Make sure to use an App Password for Gmail, not your regular password.
+2025-08-15 00:09:53,292 - INFO - Starting email automation...
+2025-08-15 00:09:53,292 - INFO - Target recipient: recipient@example.com
+2025-08-15 00:09:53,292 - INFO - Check interval: 1 minutes
+2025-08-15 00:09:54,391 - ERROR - Failed to establish SMTP connection: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a640c23a62f3a-af91a0def2esm2619554566b.61 - gsmtp')
+2025-08-15 00:09:54,391 - ERROR - Failed to send initial email. Please check your configuration.
+2025-08-15 00:10:12,057 - INFO - Starting email automation...
+2025-08-15 00:10:12,057 - INFO - Target recipient: recipient@example.com
+2025-08-15 00:10:12,057 - INFO - Check interval: 1 minutes
+2025-08-15 00:10:13,136 - ERROR - Failed to establish SMTP connection: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials a640c23a62f3a-af91a0763e4sm2659363166b.1 - gsmtp')
+2025-08-15 00:10:13,136 - ERROR - Failed to send initial email. Please check your configuration.
+2025-08-15 00:10:29,224 - INFO - Starting email automation...
+2025-08-15 00:10:29,224 - INFO - Target recipient: emregecit5@gmail.com
+2025-08-15 00:10:29,224 - INFO - Check interval: 1 minutes
+2025-08-15 00:10:29,935 - INFO - SMTP connection established successfully
+2025-08-15 00:10:30,725 - INFO - Email sent successfully to emregecit5@gmail.com at 2025-08-15 00:10:29
+2025-08-15 00:10:30,725 - INFO - Initial email sent successfully
+2025-08-15 00:10:30,725 - INFO - Email automation started. Press Ctrl+C to stop.
+2025-08-15 00:11:30,732 - INFO - Checking for replies before sending email...
+2025-08-15 00:11:31,831 - INFO - IMAP connection established successfully
+2025-08-15 00:11:32,286 - INFO - No reply detected. Sending email...
+2025-08-15 00:11:33,045 - INFO - Email sent successfully to emregecit5@gmail.com at 2025-08-15 00:11:32
+2025-08-15 00:12:33,053 - INFO - Checking for replies before sending email...
+2025-08-15 00:12:33,844 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:12:33,844 - INFO - No reply detected. Sending email...
+2025-08-15 00:12:34,623 - INFO - Email sent successfully to emregecit5@gmail.com at 2025-08-15 00:12:33
+2025-08-15 00:13:34,635 - INFO - Checking for replies before sending email...
+2025-08-15 00:13:36,663 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:13:36,664 - INFO - No reply detected. Sending email...
+2025-08-15 00:13:37,415 - INFO - Email sent successfully to emregecit5@gmail.com at 2025-08-15 00:13:36
+2025-08-15 00:14:37,427 - INFO - Checking for replies before sending email...
+2025-08-15 00:14:38,034 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:14:38,034 - INFO - No reply detected. Sending email...
+2025-08-15 00:14:38,895 - INFO - Email sent successfully to emregecit5@gmail.com at 2025-08-15 00:14:38
+2025-08-15 00:15:38,932 - INFO - Checking for replies before sending email...
+2025-08-15 00:15:39,682 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:15:39,682 - INFO - No reply detected. Sending email...
+2025-08-15 00:15:40,398 - INFO - Email sent successfully to emregecit5@gmail.com at 2025-08-15 00:15:39
+2025-08-15 00:16:40,403 - INFO - Checking for replies before sending email...
+2025-08-15 00:16:41,031 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:16:41,032 - INFO - No reply detected. Sending email...
+2025-08-15 00:16:41,805 - INFO - Email sent successfully to emregecit5@gmail.com at 2025-08-15 00:16:41
+2025-08-15 00:17:41,812 - INFO - Checking for replies before sending email...
+2025-08-15 00:17:42,626 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:17:42,626 - INFO - No reply detected. Sending email...
+2025-08-15 00:17:43,425 - INFO - Email sent successfully to emregecit5@gmail.com at 2025-08-15 00:17:42
+2025-08-15 00:18:43,436 - INFO - Checking for replies before sending email...
+2025-08-15 00:18:44,065 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:18:44,065 - INFO - No reply detected. Sending email...
+2025-08-15 00:18:44,799 - INFO - Email sent successfully to emregecit5@gmail.com at 2025-08-15 00:18:44
+2025-08-15 00:19:44,807 - INFO - Checking for replies before sending email...
+2025-08-15 00:19:45,659 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:19:45,659 - INFO - No reply detected. Sending email...
+2025-08-15 00:19:46,363 - INFO - Email sent successfully to emregecit5@gmail.com at 2025-08-15 00:19:45
+2025-08-15 00:20:46,379 - INFO - Checking for replies before sending email...
+2025-08-15 00:20:47,109 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:20:47,383 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:20:47,690 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:20:47,690 - INFO - No reply detected. Sending email...
+2025-08-15 00:20:48,459 - INFO - Email sent successfully to emregecit5@gmail.com at 2025-08-15 00:20:47
+2025-08-15 00:21:48,462 - INFO - Checking for replies before sending email...
+2025-08-15 00:21:49,149 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:21:49,456 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:21:49,637 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:21:49,637 - INFO - No reply detected. Sending email...
+2025-08-15 00:21:50,401 - INFO - Email sent successfully to emregecit5@gmail.com at 2025-08-15 00:21:49
+2025-08-15 00:22:50,412 - INFO - Checking for replies before sending email...
+2025-08-15 00:22:51,091 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:22:51,342 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:22:51,566 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:22:51,566 - INFO - No reply detected. Sending email...
+2025-08-15 00:22:52,303 - INFO - Email sent successfully to emregecit5@gmail.com at 2025-08-15 00:22:51
+2025-08-15 00:23:52,309 - INFO - Checking for replies before sending email...
+2025-08-15 00:23:52,881 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:23:53,056 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:23:53,313 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:23:53,313 - INFO - No reply detected. Sending email...
+2025-08-15 00:23:54,093 - INFO - Email sent successfully to emregecit5@gmail.com at 2025-08-15 00:23:53
+2025-08-15 00:24:54,101 - INFO - Checking for replies before sending email...
+2025-08-15 00:24:54,710 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:24:54,899 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:24:55,086 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:24:55,086 - INFO - No reply detected. Sending email...
+2025-08-15 00:24:55,794 - INFO - Email sent successfully to emregecit5@gmail.com at 2025-08-15 00:24:55
+2025-08-15 00:25:55,797 - INFO - Checking for replies before sending email...
+2025-08-15 00:25:56,386 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:25:56,612 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:25:56,800 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:25:56,800 - INFO - No reply detected. Sending email...
+2025-08-15 00:25:57,544 - INFO - Email sent successfully to emregecit5@gmail.com at 2025-08-15 00:25:56
+2025-08-15 00:26:57,549 - INFO - Checking for replies before sending email...
+2025-08-15 00:26:58,121 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:26:58,356 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:26:58,550 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:26:58,550 - INFO - No reply detected. Sending email...
+2025-08-15 00:26:59,268 - INFO - Email sent successfully to emregecit5@gmail.com at 2025-08-15 00:26:58
+2025-08-15 00:27:59,275 - INFO - Checking for replies before sending email...
+2025-08-15 00:27:59,865 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:28:00,055 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:28:00,242 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:28:00,242 - INFO - No reply detected. Sending email...
+2025-08-15 00:28:00,969 - INFO - Email sent successfully to emregecit5@gmail.com at 2025-08-15 00:28:00
+2025-08-15 00:29:00,996 - INFO - Checking for replies before sending email...
+2025-08-15 00:29:03,182 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:29:03,467 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:29:03,656 - WARNING - Error parsing email date: can't compare offset-naive and offset-aware datetimes
+2025-08-15 00:29:03,657 - INFO - No reply detected. Sending email...
+2025-08-15 00:29:04,461 - INFO - Email sent successfully to emregecit5@gmail.com at 2025-08-15 00:29:03
+2025-08-15 00:29:06,435 - INFO - Keyboard interrupt received. Stopping...
+2025-08-15 00:29:06,775 - INFO - Connections cleaned up successfully
+2025-08-15 00:29:06,775 - INFO - Email automation stopped.
+2025-08-15 00:29:11,711 - INFO - Starting email automation...
+2025-08-15 00:29:11,712 - INFO - Target recipient: emregecit5@gmail.com
+2025-08-15 00:29:11,712 - INFO - Check interval: 1 minutes
+2025-08-15 00:29:12,460 - INFO - SMTP connection established successfully
+2025-08-15 00:29:13,202 - INFO - Email sent successfully to emregecit5@gmail.com at 2025-08-15 00:29:12
+2025-08-15 00:29:13,202 - INFO - Initial email sent successfully
+2025-08-15 00:29:13,202 - INFO - Email automation started. Press Ctrl+C to stop.
+2025-08-15 00:29:30,638 - INFO - Keyboard interrupt received. Stopping...
+2025-08-15 00:29:30,704 - INFO - Connections cleaned up successfully
+2025-08-15 00:29:30,704 - INFO - Email automation stopped.
+2025-08-15 01:00:57,202 - INFO - Starting email automation...
+2025-08-15 01:00:57,202 - INFO - Target recipient: emregecit5@gmail.com
+2025-08-15 01:00:57,202 - INFO - Check interval: 1 minutes
+2025-08-15 01:00:57,988 - INFO - SMTP connection established successfully
+2025-08-15 01:00:58,791 - INFO - Email sent successfully to emregecit5@gmail.com at 2025-08-15 01:00:58
+2025-08-15 01:00:58,792 - INFO - Initial email sent successfully
+2025-08-15 01:00:58,792 - INFO - Email automation started. Press Ctrl+C to stop.
+2025-08-15 01:00:59,350 - INFO - Keyboard interrupt received. Stopping...
+2025-08-15 01:00:59,419 - INFO - Connections cleaned up successfully
+2025-08-15 01:00:59,419 - INFO - Email automation stopped.
+2025-08-15 12:51:08,066 - INFO - Starting email automation...
+2025-08-15 12:51:08,066 - INFO - Target recipient: emregecit5@gmail.com
+2025-08-15 12:51:08,066 - INFO - Check interval: 1 minutes
+2025-08-15 12:51:08,881 - INFO - SMTP connection established successfully
+2025-08-15 12:51:09,802 - INFO - Email sent successfully to emregecit5@gmail.com at 2025-08-15 12:51:08
+2025-08-15 12:51:09,802 - INFO - Initial email sent successfully
+2025-08-15 12:51:09,803 - INFO - Email automation started. Press Ctrl+C to stop.
+2025-08-15 12:52:09,818 - INFO - Checking for replies before sending email...
+2025-08-15 12:52:10,928 - INFO - IMAP connection established successfully
+2025-08-15 12:52:11,516 - INFO - Search criteria: FROM "emregecit5@gmail.com" SINCE "15-Aug-2025"
+2025-08-15 12:52:11,516 - INFO - Search status: OK, Found messages: 4
+2025-08-15 12:52:12,902 - INFO - REPLY DETECTED!
+2025-08-15 12:52:12,902 - INFO - Reply received from emregecit5@gmail.com
+2025-08-15 12:52:12,902 - INFO - Reply subject: Re: Automated Email - Waiting for Reply
+2025-08-15 12:52:12,902 - INFO - Reply date: 2025-08-15 09:51:55+00:00
+2025-08-15 12:52:12,902 - INFO - Last sent: 2025-08-15 09:51:09.802614+00:00
+2025-08-15 12:52:12,902 - INFO - Reply detected! Stopping email automation.
+2025-08-15 12:52:13,114 - INFO - Connections cleaned up successfully
+2025-08-15 12:52:13,114 - INFO - Email automation stopped.
+2025-08-15 12:53:13,119 - INFO - Connections cleaned up successfully
+2025-08-15 12:53:13,121 - INFO - Email automation stopped.

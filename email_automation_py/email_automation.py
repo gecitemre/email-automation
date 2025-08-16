@@ -5,7 +5,7 @@ import logging
 import os
 import smtplib
 import time
-from datetime import datetime
+from datetime import datetime, timezone
 from email.header import decode_header
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -138,7 +138,7 @@ Best regards"""
                 self.config["gmail_username"], self.config["recipient_email"], text
             )
 
-            self.last_email_time = datetime.now()
+            self.last_email_time = datetime.now(timezone.utc)
             logging.info(
                 f"Email sent successfully to {self.config['recipient_email']} at {timestamp}"
             )
@@ -149,6 +149,20 @@ Best regards"""
             # Try to reconnect
             self.smtp_server = None
             return False
+
+    def normalize_datetime(self, dt):
+        """Normalize datetime to UTC timezone for comparison."""
+        if dt is None:
+            return None
+
+        if dt.tzinfo is None:
+            # If timezone-naive, assume local timezone and convert to UTC
+            dt = dt.replace(tzinfo=timezone.utc)
+        else:
+            # Convert to UTC if timezone-aware
+            dt = dt.astimezone(timezone.utc)
+
+        return dt
 
     def check_for_replies(self):
         """Check for replies from the recipient."""
@@ -169,6 +183,10 @@ Best regards"""
                 search_criteria += f' SINCE "{since_date}"'
 
             status, messages = self.imap_server.search(None, search_criteria)
+            logging.info(f"Search criteria: {search_criteria}")
+            logging.info(
+                f"Search status: {status}, Found messages: {len(messages[0].split()) if messages[0] else 0}"
+            )
 
             if status == "OK" and messages[0]:
                 email_ids = messages[0].split()
@@ -185,10 +203,18 @@ Best regards"""
                             try:
                                 email_date = email.utils.parsedate_to_datetime(date_str)
 
+                                # Normalize both dates for comparison
+                                normalized_email_date = self.normalize_datetime(
+                                    email_date
+                                )
+                                normalized_last_sent = self.normalize_datetime(
+                                    self.last_email_time
+                                )
+
                                 # If email is newer than our last sent email, we have a reply
                                 if (
-                                    self.last_email_time
-                                    and email_date > self.last_email_time
+                                    normalized_last_sent
+                                    and normalized_email_date > normalized_last_sent
                                 ):
                                     subject = decode_header(
                                         email_message.get("Subject", "")
@@ -196,11 +222,13 @@ Best regards"""
                                     if isinstance(subject, bytes):
                                         subject = subject.decode()
 
+                                    logging.info(f"REPLY DETECTED!")
                                     logging.info(
                                         f"Reply received from {self.config['recipient_email']}"
                                     )
                                     logging.info(f"Reply subject: {subject}")
-                                    logging.info(f"Reply date: {email_date}")
+                                    logging.info(f"Reply date: {normalized_email_date}")
+                                    logging.info(f"Last sent: {normalized_last_sent}")
                                     return True
                             except Exception as e:
                                 logging.warning(f"Error parsing email date: {str(e)}")
@@ -268,7 +296,11 @@ Best regards"""
         try:
             while self.running:
                 schedule.run_pending()
-                time.sleep(60)  # Check every minute
+                # Check every 5 seconds instead of 60 for faster response to stop signals
+                for _ in range(12):  # 12 * 5 = 60 seconds total
+                    if not self.running:
+                        break
+                    time.sleep(5)
         except KeyboardInterrupt:
             logging.info("Keyboard interrupt received. Stopping...")
         finally:
@@ -280,6 +312,7 @@ Best regards"""
         schedule.clear()
         self.cleanup_connections()
         logging.info("Email automation stopped.")
+        logging.info("Program will exit in 5 seconds...")
 
 
 def main():

@@ -1,0 +1,12 @@
+{
+    "gmail_username": "emregecit2@gmail.com",
+    "gmail_password": "bhus ujvl stuo ooiw",
+    "recipient_email": "emregecit5@gmail.com",
+    "subject": "Automated Email - Waiting for Reply",
+    "message_file": "message_template.txt",
+    "check_interval_minutes": 1,
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "imap_server": "imap.gmail.com",
+    "imap_port": 993
+}
